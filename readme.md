@@ -21,3 +21,5 @@ and
     * `sudo systemctl enable weather_logger.service`
     * `sudo systemctl start weather_logger.service`
 
+
+email: tlievois@gmail.com

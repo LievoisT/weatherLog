@@ -1,0 +1,13 @@
+[Unit]
+Description=Weather log service
+After=network.target
+
+[Service]
+Type=simple
+Restart=on-failure
+ExecStart=python3 /home/pi/weatherLog/weatherLogger.py
+RestartSec=5
+WorkingDirectory=/home/pi/weatherLog
+
+[Install]
+WantedBy=multi-user.target
